@@ -61,30 +61,6 @@ echo -e "${EROR} Your Input Is Wrong !"
 exit 1
 fi
 clear
-#izin
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "memeriksa vps anda"
-sleep 0.5
-CEKEXPIRED () {
-        today=$(date -d +1day +%Y -%m -%d)
-        Exp1=$(curl -sS https://raw.githubusercontent.com/gigclone/permission/main/A1valid/ip | grep $MYIP | awk '{print $3}')
-        if [[ $today < $Exp1 ]]; then
-        echo "status script aktif.."
-        else
-        echo "SCRIPT ANDA EXPIRED";
-        exit 0
-fi
-}
-IZIN=$(curl -sS https://raw.githubusercontent.com/gigclone/permission/main/A1valid/ip | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
-CEKEXPIRED
-else
-echo "Akses di tolak!! Benget sia hurung!!";
-exit 0
-fi
-
-clear
 echo -e "${GREEN}Starting Installation............${NC}"
 cd /root/
 apt update -y
