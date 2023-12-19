@@ -31,7 +31,7 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
-if [ "${EUID}" -ne 0 ]; then
+#if [ "${EUID}" -ne 0 ]; then
 echo -e "${EROR} Please Run This Script As Root User !"
 exit 1
 fi
@@ -60,6 +60,7 @@ echo -e "${EROR} Your Input Is Wrong !"
 exit 1
 fi
 clear
+fi
 echo -e "${GREEN}Starting Installation............${NC}"
 cd /root/
 apt update -y
