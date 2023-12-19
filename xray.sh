@@ -32,9 +32,9 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 #if [ "${EUID}" -ne 0 ]; then
-echo -e "${EROR} Please Run This Script As Root User !"
-exit 1
-fi
+#echo -e "${EROR} Please Run This Script As Root User !"
+#exit 1
+#fi
 export IP=$( curl -s https://ipinfo.io/ip/ )
 export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
 if [[ -r /etc/xray/domain ]]; then
