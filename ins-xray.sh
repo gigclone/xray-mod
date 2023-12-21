@@ -130,14 +130,15 @@ apt install -y nginx
 cd
 rm -fr /etc/nginx/sites-enabled/default
 rm -fr /etc/nginx/sites-available/default
-wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/gigclone/multi/main/y/nginx.conf.txt" 
+wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/gigclone/xray-mod/main/y/nginx.conf" 
+wget -q -O /usr/local/etc/xray/config.json https://raw.githubusercontent.com/gigclone/xray-mod/main/y/config.json
 mkdir -p /home/vps/public_html
-wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/gigclone/multi/main/y/vps.conf.txt"
+wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/gigclone/xray-mod/main/y/xray.conf"
 
 wget -q -O xraymode.sh https://raw.githubusercontent.com/gigclone/xray/main/xraymode.sh && chmod +x xraymode.sh && ./xraymode.sh
 sleep 1 
-wget -q -O xray.conf https://raw.githubusercontent.com/gigclone/multi/main/y/xray.conf.txt && chmod +x xray.conf && ./xray.conf
-sleep 1 
+#wget -q -O xray.conf https://raw.githubusercontent.com/gigclone/xray-mod/main/y/xray.conf && chmod +x xray.conf && ./xray.conf
+#sleep 1 
 
 # Installing Xray Service
 rm -fr /etc/systemd/system/xray.service.d
