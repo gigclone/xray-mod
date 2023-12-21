@@ -2,7 +2,7 @@
 
 echo -e "${YELLOW}Config Data${NC}"
 
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gigclone/multi/main/menu.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu.sh"
 #wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/gigclone/xray-mod/main/ssh/menu-ssh.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-vmess.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-vless.sh"
