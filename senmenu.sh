@@ -2,10 +2,10 @@
 
 echo -e "${YELLOW}Config Data${NC}"
 
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu1.sh"
 #wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/gigclone/xray-mod/main/ssh/menu-ssh.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-vless.sh"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu-vless.sh"
 wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-trojan.sh"
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/menu-ss.sh"
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/gigclone/xray-mod/main/menu/add-vless.sh"
